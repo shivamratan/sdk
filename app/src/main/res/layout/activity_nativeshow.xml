@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#23ffff00"
+    tools:context="com.crackretail.mytestapp.nativeshow">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_back"
+        android:id="@+id/myadLayout"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="3dp"
+        >
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/linearLayout">
+
+                <ImageView
+                    android:src="@drawable/info"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/imageView2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sponsored"
+                    android:textSize="11dp"
+                    android:id="@+id/textView2" />
+            </LinearLayout>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/icon_imageView"
+            android:src="@drawable/icon"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ad Heading"
+            android:id="@+id/textView_Heading"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:layout_alignTop="@+id/icon_imageView"
+            android:layout_toRightOf="@+id/icon_imageView"
+            android:layout_toEndOf="@+id/icon_imageView"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_marginTop="3dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="4.5"
+            android:layout_alignLeft="@+id/textView_Heading"
+            android:layout_alignStart="@+id/textView_Heading"
+            android:layout_below="@+id/textView_Heading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="this is the sample text which is to be fetched from the server to the ad content advertised by advertiser"
+                android:id="@+id/textView3"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_below="@+id/icon_imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/main"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/imageView3"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="install"
+                android:id="@+id/button_install"
+                android:layout_below="@+id/imageView3"
+                android:layout_alignRight="@+id/linearLayout"
+                android:layout_alignEnd="@+id/linearLayout" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_back"
+        android:id="@+id/myadLayout1"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            >
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="invisible"
+                android:id="@+id/linearLayout1">
+
+                <ImageView
+                    android:src="@drawable/info"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/imageView21" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sponsored"
+                    android:textSize="11dp"
+                    android:id="@+id/textView21" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/icon_imageView1"
+                android:src="@drawable/icon"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Clash of Clans"
+                android:id="@+id/textView_Heading1"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_alignTop="@+id/icon_imageView1"
+                android:layout_toRightOf="@+id/icon_imageView1"
+                android:layout_toEndOf="@+id/icon_imageView1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar1"
+                android:layout_marginTop="3dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:rating="4.5"
+                android:layout_alignLeft="@+id/textView_Heading1"
+                android:layout_alignStart="@+id/textView_Heading1"
+                android:layout_below="@+id/textView_Heading1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="this is the sample text which is to be fetched from the server to the ad content advertised by advertiser"
+                android:id="@+id/textView31"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_below="@+id/icon_imageView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/main"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/imageView31"
+                android:layout_below="@+id/textView31"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="install"
+                android:id="@+id/button_install1"
+                android:layout_below="@+id/imageView31"
+                android:layout_alignRight="@+id/linearLayout1"
+                android:layout_alignEnd="@+id/linearLayout1" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_back"
+        android:id="@+id/myadLayout2"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            >
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="invisible"
+                android:id="@+id/linearLayout2">
+
+                <ImageView
+                    android:src="@drawable/info"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/imageView22" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sponsored"
+                    android:textSize="11dp"
+                    android:id="@+id/textView22" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/icon_imageView2"
+                android:src="@drawable/icon"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Mario Bros"
+                android:id="@+id/textView_Heading2"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_alignTop="@+id/icon_imageView2"
+                android:layout_toRightOf="@+id/icon_imageView2"
+                android:layout_toEndOf="@+id/icon_imageView2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar2"
+                android:layout_marginTop="3dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:rating="4.5"
+                android:layout_alignLeft="@+id/textView_Heading2"
+                android:layout_alignStart="@+id/textView_Heading2"
+                android:layout_below="@+id/textView_Heading2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="this is the sample text which is to be fetched from the server to the ad content advertised by advertiser"
+                android:id="@+id/textView32"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_below="@+id/icon_imageView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/main"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/imageView32"
+                android:layout_below="@+id/textView32"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="install"
+                android:id="@+id/button_install2"
+                android:layout_below="@+id/imageView32"
+                android:layout_alignRight="@+id/linearLayout2"
+                android:layout_alignEnd="@+id/linearLayout2" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_back"
+        android:id="@+id/myadLayout3"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            >
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="invisible"
+                android:id="@+id/linearLayout3">
+
+                <ImageView
+                    android:src="@drawable/info"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/imageView23" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sponsored"
+                    android:textSize="11dp"
+                    android:id="@+id/textView23" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/icon_imageView3"
+                android:src="@drawable/icon"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Asphalt"
+                android:id="@+id/textView_Heading3"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_alignTop="@+id/icon_imageView3"
+                android:layout_toRightOf="@+id/icon_imageView3"
+                android:layout_toEndOf="@+id/icon_imageView3"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar3"
+                android:layout_marginTop="3dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:rating="4.5"
+                android:layout_alignLeft="@+id/textView_Heading3"
+                android:layout_alignStart="@+id/textView_Heading3"
+                android:layout_below="@+id/textView_Heading3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="this is the sample text which is to be fetched from the server to the ad content advertised by advertiser"
+                android:id="@+id/textView33"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_below="@+id/icon_imageView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/main"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/imageView33"
+                android:layout_below="@+id/textView33"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="install"
+                android:id="@+id/button_install3"
+                android:layout_below="@+id/imageView33"
+                android:layout_alignRight="@+id/linearLayout3"
+                android:layout_alignEnd="@+id/linearLayout3" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_back"
+        android:id="@+id/myadLayout4"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            >
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="invisible"
+                android:id="@+id/linearLayout4">
+
+                <ImageView
+                    android:src="@drawable/info"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/imageView24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sponsored"
+                    android:textSize="11dp"
+                    android:id="@+id/textView24" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/icon_imageView4"
+                android:src="@drawable/icon"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Ninja Assassin"
+                android:id="@+id/textView_Heading4"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_alignTop="@+id/icon_imageView4"
+                android:layout_toRightOf="@+id/icon_imageView4"
+                android:layout_toEndOf="@+id/icon_imageView4"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar4"
+                android:layout_marginTop="3dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:rating="4.5"
+                android:layout_alignLeft="@+id/textView_Heading4"
+                android:layout_alignStart="@+id/textView_Heading4"
+                android:layout_below="@+id/textView_Heading4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="this is the sample text which is to be fetched from the server to the ad content advertised by advertiser"
+                android:id="@+id/textView34"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_below="@+id/icon_imageView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/main"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/imageView34"
+                android:layout_below="@+id/textView34"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="install"
+                android:id="@+id/button_install4"
+                android:layout_below="@+id/imageView34"
+                android:layout_alignRight="@+id/linearLayout4"
+                android:layout_alignEnd="@+id/linearLayout4" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+</LinearLayout>
