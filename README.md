@@ -1,5 +1,4 @@
-![cr_md](https://cloud.githubusercontent.com/assets/13011023/17073167/d9f8f01e-508b-11e6-9bf3-0ed7a98d58f0.png)
-# CrackRetail-Android-SDK
+# Android-SDK
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
     * [Gradle Installation](#gradleinstallation)
