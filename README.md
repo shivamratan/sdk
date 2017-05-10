@@ -76,8 +76,9 @@ CrackRetail SDK can be easily be added as a dependency
 #<a id="usage"></a>Usage
 ##<a id="bannerad"></a>Banner
 ###<a id="standardbanner"></a>Standard Banner
+
 | Type        | Size(WxH)           | Description  |
-| ------------- |:-------------:| -----:|
+| ------------- | ------------- | ------------- |
 | Type I     | 310x250 | Extra Large Banner |
 | Type II      | 310x150 | Large Banner |
 | Type III      | 310x100 | Medium Banner |
